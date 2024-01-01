@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D805B32E2B431D0B003EBF18 /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */; };
+		D805B3302B437592003EBF18 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805B32F2B437592003EBF18 /* QuestionListView.swift */; };
 		D81A46002B3F4EE8008D211B /* GeoQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A45FF2B3F4EE8008D211B /* GeoQuizApp.swift */; };
 		D81A46022B3F4EE8008D211B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A46012B3F4EE8008D211B /* ContentView.swift */; };
 		D81A46042B3F4EEA008D211B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81A46032B3F4EEA008D211B /* Assets.xcassets */; };
 		D81A46072B3F4EEA008D211B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81A46062B3F4EEA008D211B /* Preview Assets.xcassets */; };
+		D81A460E2B3F4FF7008D211B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A460D2B3F4FF7008D211B /* QuestionView.swift */; };
+		D81A46112B3F9DED008D211B /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D81A46102B3F9DED008D211B /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
+		D805B32F2B437592003EBF18 /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
 		D81A45FC2B3F4EE8008D211B /* GeoQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81A45FF2B3F4EE8008D211B /* GeoQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoQuizApp.swift; sourceTree = "<group>"; };
 		D81A46012B3F4EE8008D211B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D81A46032B3F4EEA008D211B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D81A46062B3F4EEA008D211B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D81A460D2B3F4FF7008D211B /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D81A46112B3F9DED008D211B /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +61,9 @@
 			children = (
 				D81A45FF2B3F4EE8008D211B /* GeoQuizApp.swift */,
 				D81A46012B3F4EE8008D211B /* ContentView.swift */,
+				D81A460D2B3F4FF7008D211B /* QuestionView.swift */,
+				D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */,
+				D805B32F2B437592003EBF18 /* QuestionListView.swift */,
 				D81A46032B3F4EEA008D211B /* Assets.xcassets */,
 				D81A46052B3F4EEA008D211B /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = GeoQuiz;
+			packageProductDependencies = (
+				D81A46102B3F9DED008D211B /* SDWebImageSwiftUI */,
+			);
 			productName = GeoQuiz;
 			productReference = D81A45FC2B3F4EE8008D211B /* GeoQuiz.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D81A45F32B3F4EE8008D211B;
+			packageReferences = (
+				D81A460F2B3F9DEC008D211B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = D81A45FD2B3F4EE8008D211B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D805B32E2B431D0B003EBF18 /* AddQuestionView.swift in Sources */,
+				D805B3302B437592003EBF18 /* QuestionListView.swift in Sources */,
 				D81A46022B3F4EE8008D211B /* ContentView.swift in Sources */,
+				D81A460E2B3F4FF7008D211B /* QuestionView.swift in Sources */,
 				D81A46002B3F4EE8008D211B /* GeoQuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D81A460F2B3F9DEC008D211B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D81A46102B3F9DED008D211B /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D81A460F2B3F9DEC008D211B /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D81A45F42B3F4EE8008D211B /* Project object */;
 }
