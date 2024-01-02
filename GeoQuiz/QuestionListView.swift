@@ -10,7 +10,6 @@ import Observation
 
 @Observable class QuestionList {
     var questions: [Question]
-    var currentQuestionIndex: Int = 0
     init(questions: [Question] = []) {
         self.questions = questions
         
