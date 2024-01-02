@@ -27,20 +27,29 @@ import Observation
 
 struct QuestionListView: View {
     var questionListVM: QuestionList = QuestionList()
+    @State var isAddViewOpen: Bool = false
     
     var body: some View {
         NavigationStack {
-            NavigationLink {
-                AddQuestionView(questionList: questionListVM)
-            } label: {
-                Text("Add New Question")
-            }
-
             List(questionListVM.questions) { question in
                 NavigationLink {
                     QuestionView(question: question)
                 } label: {
                     Text(question.questionText)
+                }
+            }
+            .navigationDestination(isPresented: $isAddViewOpen) {
+                AddQuestionView(questionList: questionListVM)
+            }
+            .navigationTitle("Question List")
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        isAddViewOpen.toggle()
+                    } label: {
+                        Label("Add New Question", systemImage: "plus")
+                    }
+                    
                 }
             }
         }
