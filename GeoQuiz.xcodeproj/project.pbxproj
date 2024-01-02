@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D805B32E2B431D0B003EBF18 /* AddQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */; };
 		D805B3302B437592003EBF18 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805B32F2B437592003EBF18 /* QuestionListView.swift */; };
+		D805B3322B448F81003EBF18 /* QuestionListOfLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = D805B3312B448F81003EBF18 /* QuestionListOfLists.swift */; };
 		D81A46002B3F4EE8008D211B /* GeoQuizApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A45FF2B3F4EE8008D211B /* GeoQuizApp.swift */; };
 		D81A46022B3F4EE8008D211B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81A46012B3F4EE8008D211B /* ContentView.swift */; };
 		D81A46042B3F4EEA008D211B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D81A46032B3F4EEA008D211B /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionView.swift; sourceTree = "<group>"; };
 		D805B32F2B437592003EBF18 /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		D805B3312B448F81003EBF18 /* QuestionListOfLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListOfLists.swift; sourceTree = "<group>"; };
 		D81A45FC2B3F4EE8008D211B /* GeoQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81A45FF2B3F4EE8008D211B /* GeoQuizApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoQuizApp.swift; sourceTree = "<group>"; };
 		D81A46012B3F4EE8008D211B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				D81A460D2B3F4FF7008D211B /* QuestionView.swift */,
 				D805B32D2B431D0B003EBF18 /* AddQuestionView.swift */,
 				D805B32F2B437592003EBF18 /* QuestionListView.swift */,
+				D805B3312B448F81003EBF18 /* QuestionListOfLists.swift */,
 				D81A46032B3F4EEA008D211B /* Assets.xcassets */,
 				D81A46052B3F4EEA008D211B /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				D805B3302B437592003EBF18 /* QuestionListView.swift in Sources */,
 				D81A46022B3F4EE8008D211B /* ContentView.swift in Sources */,
 				D81A460E2B3F4FF7008D211B /* QuestionView.swift in Sources */,
+				D805B3322B448F81003EBF18 /* QuestionListOfLists.swift in Sources */,
 				D81A46002B3F4EE8008D211B /* GeoQuizApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
