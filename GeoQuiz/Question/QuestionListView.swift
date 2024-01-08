@@ -6,6 +6,39 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
+
+struct QuestionListView: View {
+    @ObservedObject var vm: QuestionListVM
+    @State var isShowingAdd = false
+    
+    var body: some View {
+        NavigationStack {
+            List {
+                ForEach(vm.questions) { question in
+                    QuestionCellView(question: question)
+                }
+            }
+            .navigationTitle("List View")
+            .toolbar {
+                ToolbarItem(placement: .primaryAction) {
+                    Button {
+                        isShowingAdd = true
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+
+                }
+            }
+            .navigationDestination(isPresented: $isShowingAdd) {
+                AddQuestionView(vm: vm)
+            }
+        }
+    }
+}
+
+
+/*
 import Observation
 
 @Observable class QuestionList {
@@ -17,10 +50,6 @@ import Observation
     
     func createNewQuestion(question: Question) {
         questions.append(question)
-    }
-    
-    func handleAnswerInput() {
-        
     }
 }
 
@@ -54,7 +83,7 @@ struct QuestionListView: View {
         }
     }
 }
-
+*/
 #Preview {
-    QuestionListView()
+    QuestionListView(vm: QuestionListVM())
 }

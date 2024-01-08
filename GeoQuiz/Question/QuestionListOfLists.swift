@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+/*
 import Observation
 
 struct QuestionListOfLists: View {
@@ -69,3 +70,4 @@ struct AddNewList: View {
 #Preview {
     QuestionListOfLists()
 }
+*/

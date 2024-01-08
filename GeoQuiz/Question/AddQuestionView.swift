@@ -9,7 +9,10 @@ import SwiftUI
 import Observation
 
 struct AddQuestionView: View {
-    var questionList: QuestionList
+//    var questionList: QuestionList
+    @ObservedObject var vm: QuestionListVM
+
+    
     @State var questionText: String = ""
     @State var imageLink: String = ""
     @State var newAnswer: String = ""
@@ -61,7 +64,8 @@ struct AddQuestionView: View {
                         if let correctAnswer {
                             let newQuestion = Question(questionText: questionText, answerArray: answerArray, answerString: correctAnswer, imageURL: imageLink)
                             print(newQuestion)
-                            questionList.createNewQuestion(question: newQuestion)
+                            vm.create(question: newQuestion)
+//                            questionList.createNewQuestion(question: newQuestion)
                         }
                     } label: {
                         Text("Save")
@@ -74,5 +78,5 @@ struct AddQuestionView: View {
 }
 
 #Preview {
-    AddQuestionView(questionList: QuestionList())
+    AddQuestionView(vm: QuestionListVM())
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 import Observation
 import SDWebImageSwiftUI
+import FirebaseFirestoreSwift
 /*
  Create DataModel and ViewModel
  QuestionModel
@@ -32,10 +33,10 @@ import SDWebImageSwiftUI
  Add Background for Textfields to ensure legibility
  */
 
-@Observable class Question: Identifiable {
-    let id: UUID = UUID()
-    var questionText: String
-    var answerArray: [String]
+struct Question: FBIdentifiable {
+    @DocumentID var id: String?
+    var questionText: String = ""
+    var answerArray: [String] = []
     
     var answerString: String = ""
     var imageURL: String = ""
@@ -46,12 +47,6 @@ import SDWebImageSwiftUI
         Question(questionText: "What city?", answerArray: ["London", "Paris", "Rome"], answerString: "London", imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Elizabeth_Tower%2C_June_2022.jpg/1024px-Elizabeth_Tower%2C_June_2022.jpg")
     ]
     
-    init(questionText: String = "", answerArray: [String] = [], answerString: String = "", imageURL: String =  "") {
-        self.questionText = questionText
-        self.answerArray = answerArray
-        self.answerString = answerString
-        self.imageURL = imageURL
-    }
 }
 
 struct QuestionView: View {
