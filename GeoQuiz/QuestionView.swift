@@ -91,37 +91,3 @@ struct QuestionView: View {
 #Preview {
     QuestionView(question: Question.examples[1])
 }
-
-
-//struct QuestionView: View {
-//
-//    @State var selectedAnswer: String = ""
-//
-//    var question: QuestionModel = QuestionModel()
-//
-//    var body: some View {
-//        Form {
-//            Section ("Question"){
-//                Text(question.questionText)
-//            }
-//            Section ("Answers"){
-//                ForEach(question.answerArray, id: \.self) { answer in
-//                    HStack {
-//                        Text(answer)
-//                        Spacer()
-//                    }
-//                    .contentShape(Rectangle())
-//                    .onTapGesture {
-//                        selectedAnswer = answer
-//                    }
-//                }
-//            }
-//            Section ("debug") {
-//                Text("Selected Answer: \(selectedAnswer)")
-//                Button("Reset") {
-//                    selectedAnswer = ""
-//                }
-//            }
-//        }
-//    }
-//}
